@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="../node_modules/underscore/underscore-min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+</body>
+<script>
+//    _.each([1,2,3],function(item){console.log(item)})
+//console.log(_.map([1,2,3],function(item){return item*3}))
+//    console.log(_.map({one:1,two:2,three:3},function(num,key){return num*2}))  [2,4,6]
+//console.log(_.reduce([1,2,3],function(memo,num){return memo+num})) 6
+//console.log(_.reduceRight([[0,1],[2,3],[4,5]],function(a,b){return a.concat(b)})) [4,5,0,3,2,1]
+//console.log(_.find([1,4,5],function(item){return item%2===0})); 4
+//console.log(_.filter([1,2,3,4,5,6],function(item){return item%2===1})); [1,3,5]
+//var listOfPlays=[{title: "Cymbeline", author: "Shakespeare", year: 1611},
+//                 {title: "The god", author: "fzh", year: 1631},
+//                {title: "The Tempest", author: "Shake", year: 1621},
+//                {title: "The king", author: "sarling", year: 1611}
+//]
+//console.log(_.where(listOfPlays,{author:'fzh'}));
+//_.findWhere() 是返回第一个值 如果没有就返回undefined
+//console.log(_.every([true],true))
+//console.log(_.pluck([{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}],'name'))
+console.log(_.max([{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}],function(item){return item.age}))
+console.log(_.partition([0, 1, 2, 3, 4, 5], function(num){return num%2===0}))
+
+</script>
+</html>

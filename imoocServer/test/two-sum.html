@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    var numArr=[1,13,15,20,4,5,10];
+    var tar=30;
+    var twoSum = function(nums, target) {
+        var times=nums.length-1;
+        var bingo=false;
+        for(var i=0;i<times;i++){
+            for(var j=i+1;j<=times;j++){
+                console.log(nums[i]+nums[j]);
+                if(nums[i]+nums[j]===target){
+                    return bingo=true;
+                }
+            }
+        }
+        return bingo
+    };
+    alert(twoSum(numArr,tar))
+</script>
+</html>

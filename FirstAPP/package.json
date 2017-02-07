@@ -1,0 +1,24 @@
+{
+  "name": "FirstAPP",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "mockjs": "^1.0.0",
+    "query-string": "^4.2.3",
+    "react": "^0.14.8",
+    "react-native": "^0.22.2",
+    "react-native-audio": "^1.2.1",
+    "react-native-button": "^1.7.1",
+    "react-native-image-picker": "^0.20.0",
+    "react-native-progress": "^3.0.1",
+    "react-native-sk-countdown": "^1.0.1",
+    "react-native-swiper": "^1.5.4",
+    "react-native-vector-icons": "^2.1.0",
+    "react-native-video": "^0.9.0",
+    "sha1": "^1.1.1"
+  }
+}

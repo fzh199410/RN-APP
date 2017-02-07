@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <a href='#'> 第一个链接 </a> </br>
+    <a href='#'> 第二个链接 </a> </br>
+    <a href='#'> 第三个链接 </a> </br>
+    <a href='#'> 第四个链接 </a> </br>
+</body>
+<script>
+//    判断是否是回文
+/*
+* @param(str)
+* @return(boolean)
+* */
+
+//
+//function checkPalindrom(str){
+//    return str===str.split('').reverse().join('')
+//}
+//alert(checkPalindrom('mamam'))
+
+//    数组去重
+//function unique(Arr){
+//    let hasTable={};
+//    let newArr=[];
+//    for(var i=0;i<Arr.length;i++){
+//        if(!hasTable[Arr[i]]){
+//            newArr.push(Arr[i]);
+//            hasTable[Arr[i]]=true
+//        }
+//    }
+//    return newArr
+//}
+//    console.log(unique([2,3,2,1,4,3,2,6]))
+
+//    统计字符串中出现最多的字符及次数
+//    function MaxOfStr(str){
+//        if(str.length===1){
+//            return str
+//        }
+//        let hasTable={}
+//        for(var i=0;i<str.trim().length;i++){
+//            if(!hasTable[str[i]]){
+//                hasTable[str[i]]=1
+//            }else{
+//                hasTable[str[i]]+=1
+//            }
+//        }
+//        let MaxChar='',MaxValue=0;
+//        for(var k in hasTable){
+//            if(hasTable[k]>=MaxValue){
+//                MaxValue=hasTable[k];
+//                console.log(hasTable[k]);
+//                console.log(typeof hasTable[k]);
+//                MaxChar=k;
+//            }
+//        }
+//        console.log(hasTable)
+//        return {
+//            MaxChar:MaxChar,
+//            MaxValue:MaxValue
+//        }
+//    }
+//    console.log(MaxOfStr('asnuingnuiffsdfoofaffff'))
+
+//    冒泡排序
+//    var arr=[2,4,5,1,1,3,2,5,6,10,13,11];
+//    function bubbleSort(Arr){
+//        for(let i= 0,l=Arr.length;i<l;i++){
+//            for(let j=i+1;j<l;j++){
+//                if(Arr[i]>Arr[j]){
+//                    let temp=Arr[i];
+//                    Arr[i]=Arr[j];
+//                    Arr[j]=temp
+//                }
+//            }
+//        }
+//        return Arr
+//    }
+//    console.log(arr.sort(function(a,b){return a-b}));   //自带升序列  b-a 降序
+//    console.log(bubbleSort(arr))
+//    不利用中间变量交换整数
+//     function changeInt(a,b){
+//         b=b-a;
+//         a=a+b;
+//         b=a-b;
+//         return {
+//             a:a,
+//             b:b
+//         }
+//     }
+//    console.log(changeInt(5,4))
+//    找出下列正整数的最大差值
+//      function findMaxProfit(Arr){
+//          let max=Math.max.apply(null,Arr);
+//          let min=Math.min.apply(null,Arr);
+//          return max-min;
+//      }
+//    console.log(findMaxProfit([5,48,13,4,3]))
+//    function randomString(n){
+//        let str='abcdefghijklmnopqrstuvwxyz0123456789'
+//        let i=0;
+//        let l=str.length;
+//        let temp=''
+//        for(i;i<n;i++){
+//            temp+=str.charAt(Math.floor(Math.random()*l))
+//        }
+//        return temp
+//    }
+//    console.log(randomString(8))
+//    点击对应的alert对应的数字
+//        dom污染
+//    var lis=document.links;
+//    for(var i=0;i<lis.length;i++){
+//        lis[i].index=i+1;
+//        lis[i].onclick=function(){
+//            alert(this.index)
+//        }
+//    }
+//        闭包
+//    var links=document.links;
+//    for(var i= 0,l=links.length;i<l;i++){
+//        (function(i){
+//            links[i].onclick=function(){
+//                alert(i+1)
+//            }
+//        })(i)
+//    }
+    //考察this
+//    var length=10;
+//    function fn(){
+//        console.log(this.length)
+//    }
+//    var obj={
+//        length:5,
+//        method:function(fn){
+//            console.log(this.length) //5
+//            fn() //10
+//            fn.call(this)  //5
+//            console.log(arguments) //obj
+//            arguments[0]() //2
+//        }
+//    }
+//    obj.method(fn,1)
+</script>
+</html>
